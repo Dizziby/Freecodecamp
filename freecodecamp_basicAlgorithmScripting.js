@@ -1,13 +1,41 @@
 // 1---Convert Celsius to Fahrenheit
 
+function convertToF(celsius) {
+    let fahrenheit = celsius * 9 / 5 + 32;
+    return fahrenheit;
+}
+
+convertToF(30);
 
 
 // 2---Reverse a String
 
+function reverseString(str) {
+    const arr = str.split("");
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.unshift(arr[i]);
+    }
+    return newArr.join("");
+}
+
+reverseString("hello");
 
 
 // 3---Factorialize a Number
 
+function factorialize(num) {
+    let result = 1;
+    if (num === 0) {
+        return result;
+    } else {
+        result = num * factorialize(num - 1);
+        return result;
+    }
+
+}
+
+factorialize(5);
 
 
 // 4---Find the Longest Word in a String
@@ -22,40 +50,40 @@
 
 
 
-// 1---Repeat a String Repeat a String
+// 7---Repeat a String Repeat a String
 
 
 
-// 1---Truncate a String
+// 8---Truncate a String
 
 
 
-// 1---Finders Keepers
+// 9---Finders Keepers
 
 
 
-// 1---Boo who
+// 10---Boo who
 
 
 
-// 1---Title Case a Sentence
+// 11---Title Case a Sentence
 
 
 
-// 1---Slice and Splice
+// 12---Slice and Splice
 
 
 
-// 1---Falsy Bouncer
+// 13---Falsy Bouncer
 
 
 
-// 1---Where do I Belong
+// 14---Where do I Belong
 
 
 
-// 1---Mutations
+// 15---Mutations
 
 
 
-// 1---Chunky Monkey
+// 16---Chunky Monkey
