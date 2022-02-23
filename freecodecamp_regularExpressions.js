@@ -93,78 +93,140 @@ let result = chewieQuote.match(chewieRegex);
 
 // 14---Find Characters with Lazy Matching
 
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // Change this line
+let result = text.match(myRegex);
 
 
 // 15---Find One or More Criminals in a Hunt
 
+let reCriminals = /C+/; // Change this line
 
 
 // 16---Match Beginning String Patterns
 
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
 
 
 // 17---Match Ending String Patterns
 
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
 
 
 // 18---Match All Letters and Numbers
 
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/gi; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
 
 
 // 19---Match Everything But Letters and Numbers
 
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/gi; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
 
 
 // 20---Match All Numbers
 
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
 
 
 // 21---Match All Non-Numbers
 
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
 
 
 // 22---Restrict Possible Usernames
 
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d{2,}$/gi; // Change this line
+let result = userCheck.test(username);
 
 
 // 23---Match Whitespace
 
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/gi; // Change this line
+let result = sample.match(countWhiteSpace);
 
 
 // 24---Match Non-Whitespace Characters
 
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
 
 
 // 25---Specify Upper and Lower Number of Matches
 
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/gi; // Change this line
+let result = ohRegex.test(ohStr);
 
 
 // 26---Specify Only the Lower Number of Matches
 
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result = haRegex.test(haStr);
 
 
 // 27---Specify Exact Number of Matches
 
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);
 
 
 // 28---Check for All or None
 
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
 
 
 // 29---Positive and Negative Lookahead
 
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
 
 
 // 30---Check For Mixed Grouping of Characters
+
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Eleanor|Franklin).*Roosevelt/ig; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
 
 
 
 // 31---Reuse Patterns Using Capture Groups
 
+let repeatNum = "42 42 42";
+let reRegex = /(^\d{1,})(\s)\1\2\1$/; // Change this line
+let result = reRegex.test(repeatNum);
 
 
 // 32---Use Capture Groups to Search and Replace
 
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
 
 
 // 33---Remove Whitespace from Start and End
+
+let hello = "   Hello, World!  ";
+let wsRegex = /(^\s+)|(\s+$)/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line

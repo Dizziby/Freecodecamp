@@ -44,6 +44,24 @@ factorialize(5);
 
 // 5---Return Largest Numbers in Arrays
 
+function largestOfFour(arr) {
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+
+        function compareNumeric(a, b) {
+            if (a > b) return 1;
+            if (a == b) return 0;
+            if (a < b) return -1;
+        }
+
+        arr[i].sort(compareNumeric);
+        newArr.push(arr[i][(arr[i].length - 1)]);
+
+    }
+    return newArr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 
 // 6---Confirm the Ending
