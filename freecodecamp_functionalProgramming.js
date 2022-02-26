@@ -285,6 +285,22 @@ console.log(JSON.stringify(ratings));
 
 // 8---Implement map on a Prototype
 
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+    const newArray = [];
+    // Only change code below this line
+    for (let i = 0; i < this.length; i++) {
+        newArray.push(callback(this[i]));
+    };
+    // Only change code above this line
+    return newArray;
+};
+
+const new_s = s.myMap(function(item) {
+    return item * 2;
+});
 
 
 // 9---Use the filter Method to Extract Data from an Array
@@ -413,6 +429,25 @@ console.log(filteredList);
 
 // 10---Implement the filter Method on a Prototype
 
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myFilter = function(callback) {
+    // Only change code below this line
+    const newArray = [];
+    for(let i = 0; i < this.length; i++) {
+        if(callback(this[i])) {
+            newArray.push(this[i])
+        }
+
+    }
+    // Only change code above this line
+    return newArray;
+};
+
+const new_s = s.myFilter(function(item) {
+    return item % 2 === 1;
+});
 
 
 // 11---Return Part of an Array Using the slice Method
@@ -712,3 +747,15 @@ checkPositive([1, 2, 3, -4, 5]);
 
 // 24---Introduction to Currying and Partial Application
 
+function add(x) {
+    // Only change code below this line
+    return function(y) {
+        return function(z) {
+            return x + y + z;
+        }
+    }
+
+    // Only change code above this line
+}
+
+add(10)(20)(30);
