@@ -1,5 +1,22 @@
 // 1---Sum All Numbers in a Range
 
+function sumAll(arr) {
+    let sum = 0;
+    if(arr[0] < arr[1]) {
+        for(let i = arr[0]; i <= arr[1]; i++) {
+            sum += i;
+        }
+    } else if (arr[0] > arr[1]) {
+        for(let i = arr[1]; i <= arr[0]; i++) {
+            sum += i;
+        }
+    } else {
+        sum = arr[0];
+    }
+    return sum;
+}
+
+sumAll([1, 4]);
 
 
 // 2---Diff Two Arrays
