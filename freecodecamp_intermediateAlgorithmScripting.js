@@ -41,6 +41,21 @@ sumAll([1, 4]);
 
 // 7---Search and Replace
 
+function myReplace(str, before, after) {
+    let newStr;
+    let newafter;
+    if(before[0] !== before[0].toUpperCase() && after[0] === after[0].toUpperCase()) {
+        newafter = after[0].toLowerCase() + after.slice(1);
+    } else if (before[0] === before[0].toUpperCase() && after[0] !== after[0].toUpperCase()) {
+        newafter = after[0].toUpperCase() + after.slice(1);
+    } else {
+        newafter = after;
+    }
+    newStr = str.replace(before, newafter);
+    return newStr;
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 // 8---DNA Pairing
