@@ -1,0 +1,556 @@
+/*1-----Change the Color of Text-----*/
+
+/*<h2 style="color: red;">CatPhotoApp</h2>*/
+
+
+/*2-----Use CSS Selectors to Style Elements-----*/
+
+/*<style>*/
+/*h2 {*/
+/*    color: blue;*/
+/*}*/
+/*</style>*/
+
+
+/*3-----Use a CSS Class to Style an Element-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*</style>*/
+/*  */
+/*<h2 class="red-text">CatPhotoApp</h2>*/
+
+
+/*4-----Style Multiple Elements with a CSS Class-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*</style>*/
+/*<h2 class="red-text">CatPhotoApp</h2> */
+/*<main> */
+/*<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>*/
+
+
+/*5-----Change the Font Size of an Element-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*.p {*/
+/*    font-size: 16px;*/
+/*}*/
+/*</style>*/
+
+
+/*6-----Set the Font Family of an Element-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+
+/*p {*/
+/*    font-size: 16px;*/
+/*    font-family: monospace;*/
+/*}*/
+/*</style>*/
+
+
+/*7-----Import a Google Font-----*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">*/
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*p {*/
+/*    font-size: 16px;*/
+/*    font-family: monospace;*/
+/*}*/
+/*h2 {*/
+/*    font-family: Lobster;*/
+/*}*/
+/*</style>*/
+
+
+/*8-----Specify How Fonts Should Degrade-----*/
+
+/*<!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">*/
+/*-->*/
+/*<style>*/
+/* .red-text {*/
+/*     color: red;*/
+/* }*/
+/*h2 {*/
+/*    font-family: Lobster, monospace;*/
+/*}*/
+/*p {*/
+/*    font-size: 16px;*/
+/*    font-family: monospace;*/
+/*}*/
+/*</style>*/
+
+
+/*9-----Size Your Images-----*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">*/
+/*<style> */
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*h2 {*/
+/*    font-family: Lobster, monospace;*/
+/*}*/
+/*p {*/
+/*    font-size: 16px;*/
+/*    font-family: monospace;*/
+/*}*/
+/*.smaller-image {*/
+/*    width: 100px;*/
+/*}*/
+/*</style>*/
+/*<h2 class="red-text">CatPhotoApp</h2>*/
+/*<main>*/
+/*<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>*/
+/*<a href="#"><img class="smaller-image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>*/
+
+
+/*10-----Add Borders Around Your Elements-----*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">*/
+/*<style>*/
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+/*h2 {*/
+/*    font-family: Lobster, monospace;*/
+/*}*/
+/*p {*/
+/*    font-size: 16px;*/
+/*    font-family: monospace;*/
+/*}*/
+/*.smaller-image {*/
+/*    width: 100px;*/
+/*}*/
+/*.thick-green-border {*/
+/*    border-color: green;*/
+/*    border-style: solid;*/
+/*    border-width: 10px;*/
+/*}*/
+/*</style>*/
+/*<h2 class="red-text">CatPhotoApp</h2>*/
+/*<main>*/
+/*<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>*/
+/*<a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>*/
+
+
+/*11-----Add Rounded Corners with border-radius-----*/
+
+/*.thick-green-border {*/
+/*    border-color: green;*/
+/*    border-width: 10px;*/
+/*    border-style: solid;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+
+/*12-----Make Circular Images with a border-radius-----*/
+
+/*.thick-green-border {*/
+/*    border-color: green;*/
+/*    border-width: 10px;*/
+/*    border-style: solid;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+
+/*13-----Give a Background Color to a div Element-----*/
+
+/*.silver-background {*/
+/*    background-color: silver;*/
+/*}*/
+/*<div class="silver-background">*/
+
+
+/*14-----Set the id of an Element-----*/
+
+/*<form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">*/
+
+
+/*15-----Use an id Attribute to Style an Element-----*/
+
+/*#cat-photo-form {*/
+/*    background-color: green;*/
+/*}*/
+
+
+/*16-----Adjust the Padding of an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    padding: 20px;*/
+/*}*/
+
+
+/*17-----Adjust the Margin of an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    padding: 20px;*/
+/*    margin: 20px;*/
+/*}*/
+
+
+/*18-----Add a Negative Margin to an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    padding: 20px;*/
+/*    margin: -15px;*/
+/*}*/
+
+
+/*19-----Add Different Padding to Each Side of an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    padding: 40px 20px 20px 40px;*/
+/*}*/
+
+
+/*20-----Add Different Margins to Each Side of an Element------*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    margin: 40px 20px 20px 40px;*/
+/*}*/
+
+
+/*21-----Use Clockwise Notation to Specify the Padding of an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    padding: 40px 20px 20px 40px;*/
+/*}*/
+
+
+/*22-----Use Clockwise Notation to Specify the Margin of an Element-----*/
+
+/*.blue-box {*/
+/*    background-color: blue;*/
+/*    color: #fff;*/
+/*    margin: 40px 20px 20px 40px;*/
+/*}*/
+
+
+/*23-----Use Attribute Selectors to Style Elements-----*/
+
+/*[type="radio"], [type="checkbox"] {*/
+/*    margin: 10px 0 15px 0*/
+/*}*/
+
+
+/*24-----Understand Absolute versus Relative Units-----*/
+
+/*.red-box {*/
+/*    background-color: red;*/
+/*    margin: 20px 40px 20px 40px;*/
+/*    padding: 1.5em;*/
+/*}*/
+
+
+/*25-----Style the HTML Body Element-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*}*/
+/*</style>*/
+
+
+/*26-----Inherit Styles from the Body Element-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    color: green;*/
+/*    font-family: monospace;*/
+/*}*/
+/*</style>*/
+/*<h1>Hello World</h1>*/
+
+
+/*27-----Prioritize One Style Over Another-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    font-family: monospace;*/
+/*    color: green;*/
+/*}*/
+/*.pink-text {*/
+/*    color: pink;*/
+/*}*/
+/*</style>*/
+/*<h1 class="pink-text">Hello World!</h1>*/
+
+
+/*28-----Override Styles in Subsequent CSS-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    font-family: monospace;*/
+/*    color: green;*/
+/*}*/
+/*.pink-text {*/
+/*    color: pink;*/
+/*}*/
+/*.blue-text {*/
+/*    color: blue;*/
+/*}*/
+/*</style>*/
+/*<h1 class="pink-text blue-text">Hello World!</h1>*/
+
+
+/*29-----Override Class Declarations by Styling ID Attributes-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    font-family: monospace;*/
+/*    color: green;*/
+/*}*/
+/*.pink-text {*/
+/*    color: pink;*/
+/*}*/
+/*.blue-text {*/
+/*    color: blue;*/
+/*}*/
+/*#orange-text {*/
+/*    color: orange;*/
+/*}*/
+/*</style>*/
+/*<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>*/
+
+
+/*30-----Override Class Declarations with Inline Styles-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    font-family: monospace;*/
+/*    color: green;*/
+/*}*/
+/*#orange-text {*/
+/*    color: orange;*/
+/*}*/
+/*.pink-text {*/
+/*    color: pink;*/
+/*}*/
+/*.blue-text {*/
+/*    color: blue;*/
+/*}*/
+/*</style>*/
+/*<h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!</h1>*/
+
+
+/*31-----Override All Other Styles by using Important-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: black;*/
+/*    font-family: monospace;*/
+/*    color: green;*/
+/*}*/
+/*#orange-text {*/
+/*    color: orange;*/
+/*}*/
+/*.pink-text {*/
+/*    color: pink !important;*/
+/*}*/
+/*.blue-text {*/
+/*    color: blue;*/
+/*}*/
+/*</style>*/
+/*  <h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>*/
+
+
+/*32-----Use Hex Code for Specific Colors-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: #000;*/
+/*}*/
+/*</style>*/
+
+
+/*33-----Use Hex Code to Mix Colors-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: #FF0000;*/
+/*}*/
+/*.green-text {*/
+/*    color: #00FF00;*/
+/*}*/
+/*.dodger-blue-text {*/
+/*    color: #1E90FF;*/
+/*}*/
+/*.orange-text {*/
+/*    color: #FFA500;*/
+/*}*/
+/*</style>*/
+
+
+/*34-----Use Abbreviated Hex Code-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: #F00;*/
+/*}*/
+/*.fuchsia-text {*/
+/*    color: #F0F;*/
+/*}*/
+/*.cyan-text {*/
+/*    color: #0FF;*/
+/*}*/
+/*.green-text {*/
+/*    color: #0F0;*/
+/*}*/
+/*</style>*/
+
+
+/*35-----Use RGB values to Color Elements-----*/
+
+/*<style>*/
+/*body {*/
+/*    background-color: rgb(0, 0, 0);*/
+/*}*/
+/*</style>*/
+
+
+/*36-----Use RGB to Mix Colors-----*/
+
+/*<style>*/
+/*.red-text {*/
+/*    color: rgb(255, 0, 0);*/
+/*}*/
+/*.orchid-text {*/
+/*    color: rgb(218, 112, 214);*/
+/*}*/
+/*.sienna-text {*/
+/*    color: rgb(160, 82, 45);*/
+/*}*/
+/*.blue-text {*/
+/*    color: rgb(0, 0, 255);*/
+/*}*/
+/*</style>*/
+
+
+/*37-----Use CSS Variables to change several elements at once-----*/
+
+/*--penguin-skin: gray;*/
+/*--penguin-belly: white;*/
+/*--penguin-beak: orange;*/
+
+
+/*38-----Create a custom CSS Variable-----*/
+
+/*.penguin {*/
+/*--penguin-skin: gray;*/
+/*position: relative;*/
+/*margin: auto;*/
+/*display: block;*/
+/*margin-top: 5%;*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*}*/
+
+
+/*39-----Use a custom CSS Variable-----*/
+
+/*background: var(--penguin-skin);*/
+
+
+/*40-----Attach a Fallback value to a CSS Variable-----*/
+
+/*background: var(--pengiun-skin, black);*/
+
+
+/*41-----Improve Compatibility with Browser Fallbacks-----*/
+
+/*<style>*/
+/*:root {*/
+/*--red-color: red;*/
+/*}*/
+/*.red-box {*/
+/*    background: red;*/
+/*    background: var(--red-color);*/
+/*    height: 200px;*/
+/*    width:200px;*/
+/*}*/
+/*</style>*/
+/*  <div class="red-box"></div>*/
+
+
+/*42-----Inherit CSS Variables-----*/
+
+/*:root {*/
+/*--penguin-belly: pink;*/
+/*}*/
+
+
+/*43-----Change a variable for a specific area-----*/
+
+/*:root {*/
+/*--penguin-skin: gray;*/
+/*--penguin-belly: pink;*/
+/*--penguin-beak: orange;*/
+/*}*/
+
+/*body {*/
+/*    background: var(--penguin-belly, #c6faf1);*/
+/*}*/
+
+/*.penguin {*/
+/*    !* Only change code below this line *!*/
+/*    --penguin-belly: white;*/
+/*    !* Only change code above this line *!*/
+/*    position: relative;*/
+/*    margin: auto;*/
+/*    display: block;*/
+/*    margin-top: 5%;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*}*/
+
+
+/*44-----Use a media query to change a variable-----*/
+
+/*:root {*/
+/*    --penguin-size: 300px;*/
+/*    --penguin-skin: gray;*/
+/*    --penguin-belly: white;*/
+/*    --penguin-beak: orange;*/
+/*}*/
+
+/*@media (max-width: 350px) {*/
+/*    :root {*/
+/*        !* Only change code below this line *!*/
+/*        --penguin-size: 200px;*/
+/*        --penguin-skin: black;*/
+/*        !* Only change code above this line *!*/
+/*    }*/
+/*}*/
