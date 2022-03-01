@@ -18,6 +18,30 @@ palindrome("eye");
 
 // 3---Caesars Cipher
 
+function rot13(str) {
+    let abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const arrAbc = abc.split("");
+    const arrStr = str.split("");
+    const newArr = [];
+    for(let i = 0; i < arrStr.length; i++) {
+        let j = arrAbc.indexOf(arrStr[i]);
+        //console.log(j, 4);
+        if(j === -1 && typeof(arrStr[i]) === 'string') {
+            newArr.push(arrStr[i]);
+        } else if(j === -1) {
+            newArr.push(" ");
+        } else {
+            if(j >= 13) {
+                newArr.push(arrAbc[j-13]);
+            }
+            newArr.push(arrAbc[j+13]);
+        }
+    }
+    let newStr = newArr.join("");
+    return newStr;
+}
+
+rot13("SERR PBQR PNZC");
 
 
 // 4---Telephone Number Validator
