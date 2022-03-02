@@ -9,290 +9,510 @@
 
 <!--1-----Create Visual Balance Using the text-align Property-->
 
-<!--h4 {-->
-<!--    text-align: center;-->
-<!--}-->
-<!--p {-->
-<!--    text-align: justify;-->
-<!--}-->
+h4 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
 
 
 <!--2-----Adjust the Width of an Element Using the width Property-->
 
-<!--.fullCard {-->
-<!--width: 245px;-->
-<!--border: 1px solid #ccc;-->
-<!--border-radius: 5px;-->
-<!--margin: 10px 5px;-->
-<!--padding: 4px;-->
-<!--}-->
+.fullCard {
+width: 245px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 10px 5px;
+padding: 4px;
+}
 
 
 <!--3-----Adjust the Height of an Element Using the height Property-->
 
-<!--h4 {-->
-<!--text-align: center;-->
-<!--height: 25px;-->
-<!--}-->
+h4 {
+text-align: center;
+height: 25px;
+}
 
 
 <!--4-----Use the strong Tag to Make Text Bold-->
 
-<!--<p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>-->
+<p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>
 
 
 <!--5-----Use the u Tag to Underline Text-->
 
-<!--<p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>-->
+<p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
 
 
 <!--6-----Use the em Tag to Italicize Text-->
 
-<!--<p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>-->
+<p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
 
 
 <!--7-----Use the s Tag to Strikethrough Text-->
 
-<!--<h4><s>Google</s>Alphabet</h4>-->
+<h4><s>Google</s>Alphabet</h4>
 
 
 <!--8-----Create a Horizontal Line Using the hr Element-->
 
-<!--<hr>-->
+<hr>
 
 
 <!--9-----Adjust the background-color Property of Text-->
 
-<!--h4 {-->
-<!--text-align: center;-->
-<!--padding: 10px;-->
-<!--background-color: rgba(45, 45, 45, 0.1);-->
-<!--}-->
+h4 {
+text-align: center;
+padding: 10px;
+background-color: rgba(45, 45, 45, 0.1);
+}
 
 
 <!--10-----Adjust the Size of a Heading Element Versus a Paragraph Element-->
 
-<!--h4 {-->
-<!--text-align: center;-->
-<!--background-color: rgba(45, 45, 45, 0.1);-->
-<!--padding: 10px;-->
-<!--font-size: 27px;-->
-<!--}-->
+h4 {
+text-align: center;
+background-color: rgba(45, 45, 45, 0.1);
+padding: 10px;
+font-size: 27px;
+}
 
 
 <!--11-----Add a box-shadow to a Card-like Element-->
 
-
+#thumbnail {
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
 
 <!--12-----Decrease the Opacity of an Element-->
 
-
+.links {
+text-align: left;
+color: black;
+opacity: 0.7;
+}
 
 
 <!--13-----Use the text-transform Property to Make Text Uppercase-->
 
-
+h4 {
+text-align: center;
+background-color: rgba(45, 45, 45, 0.1);
+padding: 10px;
+font-size: 27px;
+text-transform: uppercase;
+}
 
 
 <!--14-----Set the font-size for Multiple Heading Elements-->
 
-
+h1 {
+font-size: 68px;
+}
+h2 {
+font-size: 52px;
+}
+h3 {
+font-size: 40px;
+}
+h4 {
+font-size: 32px;
+}
+h5 {
+font-size: 21px;
+}
+h6 {
+font-size: 14px;
+}
 
 
 <!--15-----Set the font-weight for Multiple Heading Elements-->
 
-
+h1 {
+font-size: 68px;
+font-weight: 800;
+}
+h2 {
+font-size: 52px;
+font-weight: 600;
+}
+h3 {
+font-size: 40px;
+font-weight: 500;
+}
+h4 {
+font-size: 32px;
+font-weight: 400;
+}
+h5 {
+font-size: 21px;
+font-weight: 300;
+}
+h6 {
+font-size: 14px;
+font-weight: 200;
+}
 
 
 <!--16-----Set the font-size of Paragraph Text-->
 
-
+p {
+font-size: 16px;
+}
 
 
 <!--17-----Set the line-height of Paragraphs-->
 
-
+p {
+font-size: 16px;
+line-height: 25px;
+}
 
 
 <!--18-----Adjust the Hover State of an Anchor Tag-->
 
-
+a:hover {
+color: blue;
+}
 
 
 <!--19-----Change an Element's Relative Position-->
 
-
+h2 {
+position: relative;
+top: 15px;
+}
 
 
 <!--20-----Move a Relatively Positioned Element with CSS Offsets-->
 
-
+h2 {
+position: relative;
+left: 15px;
+bottom: 10px;
+}
 
 
 <!--21-----Lock an Element to its Parent with Absolute Positioning-->
 
-
+#searchbar {
+position: absolute;
+top: 50px;
+right: 50px;
+}
+section {
+position: relative;
+}
 
 
 <!--22-----Lock an Element to the Browser Window with Fixed Positioning-->
 
-
+#navbar {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+background-color: #767676;
+}
 
 
 <!--23-----Push Elements Left or Right with the float Property-->
 
+#left {
+float: left;
+width: 50%;
+}
+#right {
+float: right;
+width: 40%;
+}
 
 
+<!--24-----Change the Position of Overlapping Elements with the z-index Property-->
 
-<!--Change the Position of Overlapping Elements with the z-index Property-->
+.first {
+background-color: red;
+position: absolute;
+z-index: 2;
+}
 
 
+<!--25-----Center an Element Horizontally Using the margin Property-->
 
+div {
+background-color: blue;
+height: 100px;
+width: 100px;
+margin: auto;
+}
 
-<!--Center an Element Horizontally Using the margin Property-->
 
+<!--26-----Learn about Complementary Colors-->
 
+.blue {
+background-color: blue;
+}
+.yellow {
+background-color: yellow;
+}
 
 
-<!--Learn about Complementary Colors-->
+<!--27-----Learn about Tertiary Colors-->
 
+body {
+background-color: #FFFFFF;
+}
 
+.orange {
+background-color: #FF7F00;
+}
 
+.cyan {
+background-color: #00FFFF;
+}
 
-<!--Learn about Tertiary Colors-->
+.raspberry {
+background-color: #FF007F;
+}
 
 
+<!--28-----Adjust the Color of Various Elements to Complementary Colors-->
 
+body {
+background-color: white;
+}
+header {
+background-color: #09A7A1;
+color: white;
+padding: 0.25em;
+}
+h2 {
+color: #09A7A1;
+}
+button {
+background-color: #FF790E;
+}
+footer {
+background-color: #09A7A1;
+color: white;
+padding: 0.5em;
+}
 
-<!--Adjust the Color of Various Elements to Complementary Colors-->
 
+<!--29-----Adjust the Hue of a Color-->
 
+.green {
+background-color: hsl(120, 100%, 50%);
+}
 
+.cyan {
+background-color: 	hsl(180, 100%, 50%);
+}
 
-<!--Adjust the Hue of a Color-->
+.blue {
+background-color: hsl(240, 100%, 50%);
+}
 
 
+<!--30-----Adjust the Tone of a Color-->
 
+nav {
+background-color: hsl(180, 80%, 25%);
+}
 
-<!--Adjust the Tone of a Color-->
 
+<!--31-----Create a Gradual CSS Linear Gradient-->
 
+div {
+border-radius: 20px;
+width: 70%;
+height: 400px;
+margin: 50px auto;
+background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+
+
+<!--32-----Use a CSS Linear Gradient to Create a Striped Element-->
+
+background: repeating-linear-gradient(
+45deg,
+yellow 0px,
+yellow 40px,
+black 40px,
+black 80px
+);
 
 
-<!--Create a Gradual CSS Linear Gradient-->
+<!--33-----Create Texture by Adding a Subtle Pattern as a Background Image-->
+
+body {
+background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")
+}
+
+
+<!--34-----Use the CSS Transform scale Property to Change the Size of an Element-->
+
+#ball2 {
+left: 65%;
+transform: scale(1.5);
+}
+
 
+<!--35-----Use the CSS Transform scale Property to Scale an Element on Hover-->
 
+div:hover {
+transform: scale(1.1);
+}
 
 
-<!--Use a CSS Linear Gradient to Create a Striped Element-->
+<!--36-----Use the CSS Transform Property skewX to Skew an Element Along the X-Axis-->
 
+#bottom {
+background-color: blue;
+transform: skewX(24deg);
+}
 
 
+<!--37-----Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis-->
 
-<!--Create Texture by Adding a Subtle Pattern as a Background Image-->
+#top {
+background-color: red;
+transform: skewY(-10deg);
+}
 
 
+<!--38-----Create a Graphic Using CSS-->
 
+.center {
+position: absolute;
+margin: auto;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100px;
+height: 100px;
+background-color: transparent;
+border-radius: 50%;
+box-shadow: 25px 10px 0 0 blue;
+}
 
-<!--Use the CSS Transform scale Property to Change the Size of an Element-->
 
+<!--39-----Create a More Complex Shape Using CSS and HTML-->
 
+.heart {
+position: absolute;
+margin: auto;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: pink;
+height: 50px;
+width: 50px;
+transform: rotate(-45deg);
+}
+.heart::after {
+background-color: pink;
+content: "";
+border-radius: 50%;
+position: absol0ute;
+width: 50px;
+height: 50px;
+top: 0px;
+left: 25px;
+}
+.heart::before {
+content: "";
+background-color: pink;
+border-radius: 50%;
+position: absolute;
+width: 50px;
+height: 50px;
+top: -25px;
+left: 0px;
+}
 
 
-<!--Use the CSS Transform scale Property to Scale an Element on Hover-->
+<!--40-----Learn How the CSS @keyframes and animation Properties Work-->
 
+#rect {
+animation-name: rainbow;
+animation-duration: 4s;
 
+@keyframes rainbow {
+0% {
+background-color: blue;
+}
+50% {
+background-color: green;
+}
+100% {
+background-color: yellow;
+}
+}
+}
 
 
-<!--Use the CSS Transform Property skewX to Skew an Element Along the X-Axis-->
+<!--41-----Use CSS Animation to Change the Hover State of a Button-->
 
 
 
 
-<!--Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis-->
+<!--42-----Modify Fill Mode of an Animation-->
 
 
 
 
-<!--Create a Graphic Using CSS-->
+<!--43-----Create Movement Using CSS Animation-->
 
 
 
 
-<!--Create a More Complex Shape Using CSS and HTML-->
+<!--44-----Create Visual Direction by Fading an Element from Left to Right-->
 
 
 
 
-<!--Learn How the CSS @keyframes and animation Properties Work-->
+<!--45-----Animate Elements Continually Using an Infinite Animation Count-->
 
 
 
 
-<!--Use CSS Animation to Change the Hover State of a Button-->
+<!--46-----Make a CSS Heartbeat using an Infinite Animation Count-->
 
 
 
 
-<!--Modify Fill Mode of an Animation-->
+<!--47-----Animate Elements at Variable Rates-->
 
 
 
 
-<!--Create Movement Using CSS Animation-->
+<!--48-----Animate Multiple Elements at Variable Rates-->
 
 
 
 
-<!--Create Visual Direction by Fading an Element from Left to Right-->
+<!--49-----Change Animation Timing with Keywords-->
 
 
 
 
-<!--Animate Elements Continually Using an Infinite Animation Count-->
+<!--50-----Learn How Bezier Curves Work-->
 
 
 
 
-<!--Make a CSS Heartbeat using an Infinite Animation Count-->
+<!--51-----Use a Bezier Curve to Move a Graphic-->
 
 
 
 
-<!--Animate Elements at Variable Rates-->
-
-
-
-
-<!--Animate Multiple Elements at Variable Rates-->
-
-
-
-
-<!--Change Animation Timing with Keywords-->
-
-
-
-
-<!--Learn How Bezier Curves Work-->
-
-
-
-
-<!--Use a Bezier Curve to Move a Graphic-->
-
-
-
-
-<!--Make Motion More Natural Using a Bezier Curve-->
-
-
-
-
-
-
-
+<!--52-----Make Motion More Natural Using a Bezier Curve-->
 
 
 
