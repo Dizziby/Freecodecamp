@@ -459,62 +459,168 @@ background-color: yellow;
 
 <!--41-----Use CSS Animation to Change the Hover State of a Button-->
 
+button {
+border-radius: 5px;
+color: white;
+background-color: #0F5897;
+padding: 5px 10px 8px 10px;
+}
 
+button:hover {
+animation-name: background-color;
+animation-duration: 500ms;
+}
+
+@keyframes background-color {
+100% {
+background-color: #4791d0;
+}
+}
 
 
 <!--42-----Modify Fill Mode of an Animation-->
 
-
+button:hover {
+animation-name: background-color;
+animation-duration: 500ms;
+/* Only change code below this line */
+animation-fill-mode: forwards;
+/* Only change code above this line */
+}
 
 
 <!--43-----Create Movement Using CSS Animation-->
 
-
+@keyframes rainbow {
+0% {
+background-color: blue;
+top: 0px;
+left: 0px;
+}
+50% {
+background-color: green;
+top: 50px;
+left: 25px;
+}
+100% {
+background-color: yellow;
+top: 0px;
+left: -25px;
+}
+}
 
 
 <!--44-----Create Visual Direction by Fading an Element from Left to Right-->
 
-
+@keyframes fade {
+50% {
+left: 60%;
+opacity: 0.1;
+}
+}
 
 
 <!--45-----Animate Elements Continually Using an Infinite Animation Count-->
 
-
+#ball {
+width: 100px;
+height: 100px;
+margin: 50px auto;
+position: relative;
+border-radius: 50%;
+background: linear-gradient(
+35deg,
+#ccffff,
+#ffcccc
+);
+animation-name: bounce;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
 
 
 <!--46-----Make a CSS Heartbeat using an Infinite Animation Count-->
 
-
+animation-iteration-count: infinite;
 
 
 <!--47-----Animate Elements at Variable Rates-->
 
+@keyframes twinkle-1 {
+50% {
+transform: scale(0.5);
+opacity: 0.5;
+}
+}
 
+@keyframes twinkle-2 {
+20% {
+transform: scale(0.5);
+opacity: 0.5;
+}
 
 
 <!--48-----Animate Multiple Elements at Variable Rates-->
 
+.star-1 {
+margin-top: 15%;
+margin-left: 60%;
+animation-duration: 1s;
+animation-name: twinkle;
+}
 
+.star-2 {
+margin-top: 25%;
+margin-left: 25%;
+animation-duration: 0.9s;
+animation-name: twinkle;
+}
+
+.star-3 {
+margin-top: 10%;
+margin-left: 50%;
+animation-duration: 1.1s;
+animation-name: twinkle;
+}
 
 
 <!--49-----Change Animation Timing with Keywords-->
 
+#ball1 {
+left:27%;
+animation-timing-function: linear;
 
+}
+#ball2 {
+left:56%;
+animation-timing-function: ease-out;
+}
 
 
 <!--50-----Learn How Bezier Curves Work-->
 
-
+#ball1 {
+left: 27%;
+animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
 
 
 <!--51-----Use a Bezier Curve to Move a Graphic-->
 
-
+#red {
+background: red;
+left: 27%;
+animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+}
 
 
 <!--52-----Make Motion More Natural Using a Bezier Curve-->
 
-
+#green {
+background: green;
+left: 75%;
+animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+}
 
 </body>
 </html>
