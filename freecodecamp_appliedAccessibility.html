@@ -87,61 +87,92 @@
 
 <!--11-----Improve Form Field Accessibility with the label Element-->
 
-
+<label for="email">Email:</label>
+<input type="text" id="email" name="email">
 
 
 <!--12-----Wrap Radio Buttons in a fieldset Element for Better Accessibility-->
 
-
+<fieldset>
+    <legend>What level ninja are you?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie">
+    <label for="newbie">Newbie Kitten</label><br>
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Developing Student</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Master</label>
+</fieldset>
 
 
 <!--13-----Add an Accessible Date Picker-->
 
-
+<label for="pickdate">Preferred Date:</label>
+<input type="date" id="pickdate" name="date">
 
 
 <!--14-----Standardize Times with the HTML5 datetime Attribute-->
 
-
+<p>Thank you to everyone for responding to Master Camper Cat's survey. The best day to host the vaunted Mortal Kombat tournament is <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>. May the best ninja win!</p>
 
 
 <!--15-----Make Elements Only Visible to a Screen Reader by Using Custom CSS-->
 
-
+.sr-only {
+position: absolute;
+left: -10000px;
+width: 1px;
+height: 1px;
+top: auto;
+overflow: hidden;
+}
 
 
 <!--16-----Improve Readability with High Contrast Text-->
 
-
+body {
+color: #636363;
+background-color: #FFF;
+}
 
 
 <!--17-----Avoid Colorblindness Issues by Using Sufficient Contrast-->
 
-
+body {
+color: hsl(0, 55%, 15%);
+background-color: hsl(120, 25%, 55%);
+}
 
 
 <!--18-----Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information-->
 
-
+button {
+color: #003366;
+background-color: #FFFF33;
+font-size: 14px;
+padding: 10px;
+}
 
 
 <!--19-----Give Links Meaning by Using Descriptive Link Text-->
 
-
+<p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near. Click here for <a href="">information about batteries</a></p>
 
 
 <!--20-----Make Links Navigable with HTML Access Keys-->
 
-
+<h2><a id="first" href="#" accesskey="g">The Garfield Files: Lasagna as Training Fuel?</a></h2>
+<h2><a id="second" href="#" accesskey="c">Is Chuck Norris a Cat Person?</a></h2>
 
 
 <!--21-----Use tabindex to Add Keyboard Focus to an Element-->
 
-
+<p tabindex="0">Instructions: Fill in ALL your information then click <b>Submit</b></p>
 
 
 <!--22-----Use tabindex to Specify the Order of Keyboard Focus for Several Elements-->
 
+<input type="search" name="search" id="search" tabindex="1">
+<input type="submit" name="submit" value="Submit" id="submit" tabindex="2">
 
 
 </body>
