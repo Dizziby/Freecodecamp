@@ -1,0 +1,34 @@
+/*1-----Create a Media Query--*/
+
+@media (max-height: 800px) {
+p {
+font-size: 10px;
+}
+}
+
+
+/*2-----Make an Image Responsive--*/
+
+.responsive-img {
+max-width: 100%;
+height: auto;
+}
+
+
+/*3-----Use a Retina Image for Higher Resolution Displays*/
+
+img {
+width: 100px;
+height: 100px;
+}
+
+
+/*4-----Make Typography Responsive*/
+
+h2 {
+width: 80vw;
+}
+p {
+width: 75vmin;
+}
+
