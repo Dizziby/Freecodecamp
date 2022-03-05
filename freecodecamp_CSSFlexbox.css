@@ -1,0 +1,193 @@
+/*1-----Use display: flex to Position Two Boxes*/
+
+#box-container {
+    height: 500px;
+    display: flex;
+}
+
+
+/*2-----Add Flex Superpowers to the Tweet Embed*/
+
+header {
+    display: flex;
+}
+
+
+/*3-----Use the flex-direction Property to Make a Row*/
+
+#box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row-reverse;
+}
+
+
+/*4-----Apply the flex-direction Property to Create Rows in the Tweet Embed*/
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*5-----Use the flex-direction Property to Make a Column*/
+
+#box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+}
+
+
+/*6-----Apply the flex-direction Property to Create a Column in the Tweet Embed*/
+
+header .profile-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
+/*7-----Align Elements Using the justify-content Property*/
+
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+
+/*8-----Use the justify-content Property in the Tweet Embed*/
+
+header .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+/*9-----Align Elements Using the align-items Property*/
+
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+
+/*10-----Use the align-items Property in the Tweet Embed*/
+
+header .follow-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+
+/*11-----Use the flex-wrap Property to Wrap a Row or Column*/
+
+#box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+
+/*12-----Use the flex-shrink Property to Shrink Items*/
+
+#box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+}
+
+#box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+}
+
+
+/*13-----Use the flex-grow Property to Expand Items*/
+
+#box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+}
+
+#box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+}
+
+
+/*14-----Use the flex-basis Property to Set the Initial Size of an Item*/
+
+#box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-basis: 10em;
+}
+
+#box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-basis: 20em;
+}
+
+
+/*15-----Use the flex Shorthand Property*/
+
+#box-1 {
+    background-color: dodgerblue;
+    flex: 2 2 150px;
+    height: 200px;
+}
+
+#box-2 {
+    background-color: orangered;
+    flex: 1 1 150px;
+    height: 200px;
+}
+
+
+/*16-----Use the order Property to Rearrange Items*/
+
+#box-1 {
+    background-color: dodgerblue;
+    order: 2;
+    height: 200px;
+    width: 200px;
+}
+
+#box-2 {
+    background-color: orangered;
+    order: 1;
+    height: 200px;
+    width: 200px;
+}
+
+
+/*17-----Use the align-self Property*/
+
+#box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+}
+
+#box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+}
