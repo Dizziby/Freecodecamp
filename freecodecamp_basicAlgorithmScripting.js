@@ -215,5 +215,32 @@ getIndexToIns([40, 60], 50);
 
 // 15---Mutations
 
+function mutation(arr) {
+    let counter = 0;
+    for(let i = 0; i < arr[1].length; i++) {
+        let regExp = new RegExp(arr[1][i], "gi");
+        if (regExp.test(arr[0])) {
+            counter++;
+        }
+    }
+    if(counter === arr[1].length) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+mutation(["hello", "hey"]);
+
 
 // 16---Chunky Monkey
+
+function chunkArrayInGroups(arr, size) {
+    const newArr = [];
+    for(let i = 0; i < Math.ceil(arr.length); i += size) {
+        newArr.push(arr.slice(i, i + size));
+    }
+    return newArr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
