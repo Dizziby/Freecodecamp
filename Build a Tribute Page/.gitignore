@@ -1,2 +1,4 @@
-'.idea'
-'.jshintrc'
+.idea
+.jshintrc
+/.idea/*
+/.idea/
