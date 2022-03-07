@@ -25,6 +25,20 @@ sumAll([1, 4]);
 
 // 3---Seek and Destroy
 
+function destroyer(arr, ...args) {
+    for(let i = 0; i < args.length; i++) {
+        arr = arr.filter(el => {
+            if(el === args[i]) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+    }
+    return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
 
 // 4---Wherefore art thou
@@ -60,6 +74,28 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 // 8---DNA Pairing
 
+function pairElement(str) {
+    const arr = [];
+    for(let i = 0; i < str.length; i++) {
+        switch(str[i]) {
+            case "G":
+                arr.push(["G", "C"]);
+                break;
+            case "C":
+                arr.push(["C", "G"]);
+                break;
+            case "T":
+                arr.push(["T", "A"]);
+                break;
+            case "A":
+                arr.push(["A", "T"]);
+                break;
+        }
+    }
+    return arr;
+}
+
+pairElement("GCG");
 
 
 // 9---Missing letters
