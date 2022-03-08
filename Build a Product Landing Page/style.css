@@ -1,0 +1,217 @@
+body {
+    font-size: 16px;
+    background-color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*=============HEADER==============*/
+
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+
+#header-img {
+    max-width: 300px;
+    height: auto;
+}
+
+#nav-bar {
+    display: flex;
+
+}
+
+#nav-bar a {
+    margin-right: 150px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#nav-bar a:visited {
+    color: inherit;
+}
+
+/*=============FORM==============*/
+
+.title {
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#email {
+    width: 300px;
+    height: 30px;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    font-style: unset;
+    background-color: #f1c40f;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color .5s linear;
+}
+
+#submit:hover {
+    background-color: orange;
+}
+
+/*=============INFORMATION==============*/
+
+.information-item {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.information-img {
+    width: 80px;
+}
+
+.information-item p {
+    font-size: 1rem;
+
+}
+
+.information-text {
+    padding-left: 60px;
+}
+
+
+/*=============VIDEO==============*/
+
+.video {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+/*=============PRODUCTS==============*/
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.product {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.level {
+    background-color: #DDDDDD;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.button-product {
+    width: 100px;
+    padding: 10px 0;
+    background-color: #F1C40F;
+    border: none;
+    font-size: 1.0rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color .5s linear;
+}
+
+.button-product:hover {
+    background-color: orange;
+}
+
+
+
+/*=============FOOTER==============*/
+
+.footer {
+    background-color: #DDDDDD;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.footer-links a:visited {
+    color: inherit;
+}
+
+
+.footer p {
+    font-size: 0.9rem;
+    text-align: end;
+    color: dimgrey;
+    margin-right: 10px;
+}
