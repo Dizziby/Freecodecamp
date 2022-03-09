@@ -46,6 +46,12 @@ rot13("SERR PBQR PNZC");
 
 // 4---Telephone Number Validator
 
+function telephoneCheck(str) {
+    let regExp = /^\d{3}-\d{3}-\d{4}|^\(\d{3}\)\d{3}-\d{4}|^\(\d{3}\)\s\d{3}-\d{4}|^\d{3}\s\d{3}\s\d{4}|^\d{10}$|^1\s\d{3}\s\d{3}\s\d{4}|^1\s\d{3}-\d{3}-\d{4}|^1\s\(\d{3}\)\s\d{3}-\d{4}|^1\(\d{3}\)\d{3}-\d{4}/;
+    return regExp.test(str);
+}
+
+telephoneCheck("555-555-5555");
 
 
 // 5---Cash Register
