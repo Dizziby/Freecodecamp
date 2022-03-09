@@ -1,0 +1,133 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+/*===================NAVBAR===================*/
+
+
+#navbar {
+    width: 300px;
+    position: fixed;
+    border-right: 2px solid dimgrey;
+    height: 100%;
+    overflow: auto;
+}
+
+.nav-header {
+    padding: 30px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-bottom: 1px solid dimgrey;
+}
+
+.nav-link {
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid dimgrey;
+}
+
+.nav-link:visited {
+    color: inherit;
+}
+
+
+
+/*===================MAIN===================*/
+
+#Introduction {
+    padding-top: 30px;
+}
+
+#main-doc {
+    margin-left: 330px;
+    margin-right: 50px;
+}
+
+
+.header-section {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.main-section p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+ul {
+    padding-left: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+li {
+    padding-top: 15px;
+    font-size: 0.9rem;
+}
+
+code {
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    background-color: #F7F7F7;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #4d4e53;
+    white-space: pre-line;
+    line-height: 2;
+}
+
+article {
+    margin: 15px;
+}
+
+#Reference {
+    padding-bottom: 30px;
+}
+
+/*===================MEDIA===================*/
+
+
+@media (max-width: 770px) {
+    #navbar {
+        height: 300px;
+        position: absolute;
+        border-bottom: 2px solid dimgrey;
+        width: 100%;
+    }
+
+    .nav-header {
+        padding: 30px;
+        font-size: 1.7rem;
+        font-weight: 500;
+        border-bottom: 1px solid dimgrey;
+        text-align: center;
+    }
+
+    #main-doc {
+        padding-top: 330px;
+        margin: 0 30px;
+    }
+}
