@@ -138,6 +138,16 @@ pairElement("GCG");
 
 // 15---Drop it
 
+function dropElements(arr, func) {
+    if(arr.find(func) === undefined) {
+        return []
+    }
+    let num = arr.find(func)
+    let index = arr.indexOf(num);
+    return arr.slice(index);
+}
+
+dropElements([1, 2, 3], function(n) {return n < 3; });
 
 
 // 16---Steamroller
