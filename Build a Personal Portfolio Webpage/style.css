@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+/*==================NAV===================*/
+
+#navbar {
+    position: fixed;
+    background-color: #BE3144;
+    width: 100%;
+}
+
+.nav-links {
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.nav-links a:visited {
+    color: inherit;
+}
+
+.nav-links a:hover {
+    background-color: #45567D;
+}
+
+
+/*==================WELCOME===================*/
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+}
+
+
+#welcome-section h1 {
+    font-size: 4rem;
+}
+
+#welcome-section p {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    color: #BE3143;
+    font-weight: 300;
+}
+
+
+/*==================PROJECTS===================*/
+
+#projects {
+    background-color: #45567D;
+}
+
+#projects:before {
+
+}
+
+/*==================CONTACTS===================*/
+
+#contacts {
+    background-color: #303841;
+    height: 80vh;
+}
+
+
+/*==================FOOTER===================*/
+
+#footer {
+    background-color: #303841;
+    height: 20vh;
+}
