@@ -4,6 +4,11 @@ body {
     font-size: 10px;
     color: #FFFFFF;
     letter-spacing: 1.2px;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 *,
@@ -67,12 +72,12 @@ p {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    padding: 0 30px;
 
 }
 
-
 #welcome-section h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #welcome-section p {
@@ -88,12 +93,13 @@ p {
 
 #projects {
     background-color: #45567D;
-    padding: 80px 0;
+    padding: 120px 0;
 }
 
 #projects h2 {
     font-size: 2.5rem;
     text-align: center;
+    margin: 0 auto;
 }
 
 #projects h2::after {
@@ -103,29 +109,84 @@ p {
     width: 650px;
     background-color: #FFFFFF;
     margin: 10px auto 60px;
+    text-align: center;
 }
 
 
 .project {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 70px;
 }
 
+
 .project-tile img {
-    width: 400px;
+    height: calc(100% - 60px);
+    width: 100%;
+    display: block;
+
+}
+
+.project-tile a {
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.project-tile p::before {
+    content: "<";
+    opacity: 0;
+    transition: opacity .3s linear;
+    color: orange;
+}
+
+.project-tile p::after {
+    content: " />";
+    opacity: 0;
+    transition: opacity .3s linear;
+    color: orange;
+}
+
+.project-tile:hover p::before {
+    opacity: 1;
+}
+
+.project-tile:hover p::after {
+    opacity: 1;
+}
+
+.project-title {
+    background-color: #303841;
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+
 }
 
 .button-project {
-    padding: 10px;
-    background-color: #303841;
-    text-decoration: none;
-    font-family: inherit;
-    margin: 0 auto;
+    text-align: center;
+}
 
+.button-project-link {
+    font-family: inherit;
+    background-color: #303841;
+    color: inherit;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color .3s linear;
+
+    padding: 10px 15px;
 }
 
 
+.button-project-link:hover {
+    background-color: #BE3144;
+}
 
 
 /*==================CONTACTS===================*/
@@ -139,7 +200,6 @@ p {
     flex-direction: column;
     justify-content: center;
 }
-
 
 
 #contacts h2 {
@@ -158,12 +218,12 @@ p {
 
 .contact-links {
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .contact-link {
-    padding: 0 20px;
+    display: inline-block;
+    padding: 10px 20px;
     position: relative;
     top: 0;
     transition: top .3s linear;
@@ -190,20 +250,35 @@ p {
 }
 
 
-
 /*==================FOOTER===================*/
 
 #footer {
     background-color: #303841;
-    height: 10vh;
     border-top: 4px #BE3143 solid;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.1rem;
+    font-weight: 300;
+    padding: 40px 0;
+    width: 100%;
 }
+
+#footer p {
+    padding: 0 20px;
+}
+
 
 #footer a {
     text-decoration: none;
     color: inherit;
+}
+
+
+
+/*==================MEDIA===================*/
+
+
+@media (max-width: 770px) {
+
 }
