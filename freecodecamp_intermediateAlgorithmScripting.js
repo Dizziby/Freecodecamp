@@ -65,6 +65,17 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
 // 6---Pig Latin
 
+function translatePigLatin(str) {
+    if(/^[aeuo]/.test(str)) {
+        return str + "way";
+    } else {
+        let consonant = str.match(/^[^aeuo]+/gi).join("");
+        console.log(consonant);
+        return str.slice(consonant.length) + consonant + "ay";
+    }
+}
+
+translatePigLatin("consonant");
 
 
 // 7---Search and Replace
@@ -114,6 +125,22 @@ pairElement("GCG");
 
 // 9---Missing letters
 
+function fearNotLetter(str) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let newStr = str[0];
+    for(let i = 0; i < str.length; i++) {
+        let regExp = new RegExp(newStr)
+        console.log(regExp)
+        if(regExp.test(alphabet)) {
+            newStr += str[i+1]
+        } else {
+            console.log(str[i])
+            return alphabet[alphabet.indexOf(str[i]) - 1]
+        }
+    }
+}
+
+fearNotLetter("abce");
 
 
 // 10---Sorted Union
