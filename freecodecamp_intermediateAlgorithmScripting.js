@@ -145,10 +145,26 @@ fearNotLetter("abce");
 
 // 10---Sorted Union
 
+function uniteUnique(...arr) {
+    const resArr = [];
+    arr.reduce((acc, el) => acc.concat(el), []).forEach(el => {
+        if(resArr.indexOf(el) === -1) {
+            return resArr.push(el);
+        }
+    })
+    return resArr;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 // 11---Convert HTML Entities
 
+function convertHTML(str) {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;").replace(/\'/, "&apos;");
+}
+
+convertHTML("Dolce & Gabbana");
 
 
 // 12---Sum All Odd Fibonacci Numbers
