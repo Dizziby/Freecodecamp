@@ -211,6 +211,32 @@ dropElements([1, 2, 3], function(n) {return n < 3; });
 
 // 20---Make a Person
 
+const Person = function(firstAndLast) {
+    // Only change code below this line
+    // Complete the method below and implement the others similarly
+    this.getFullName = function() {
+        return firstAndLast;
+    };
+    this.getFirstName = function() {
+        return firstAndLast.split(" ")[0];
+    };
+    this.getLastName = function() {
+        return firstAndLast.split(" ")[1];
+    };
+
+    this.setFullName = function(fullName) {
+        firstAndLast = fullName;
+    };
+    this.setFirstName = function(first) {
+        firstAndLast = first + " " + firstAndLast.split(" ")[1];
+        console.log(firstAndLast)
+    };
+    this.setLastName = function(last) {
+        firstAndLast = firstAndLast.split(" ")[0]  + " " + last;
+    };
+};
+
+const bob = new Person('Bob Ross');
 
 
 // 21---Map the Debris
