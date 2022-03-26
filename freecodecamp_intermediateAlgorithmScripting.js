@@ -195,6 +195,19 @@ dropElements([1, 2, 3], function(n) {return n < 3; });
 
 // 16---Steamroller
 
+function steamrollArray(arr) {
+    const newArr = [];
+    for(let i = 0; i < arr.length; i++) {
+        if (!Array.isArray(arr[i])) {
+            newArr.push(arr[i])
+        } else {
+            newArr.push(...steamrollArray(arr[i]))
+        }
+    }
+    return newArr;
+}
+
+steamrollArray([1, [2], [3, [[4]]]]);
 
 
 // 17---Binary Agents
